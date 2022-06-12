@@ -37,8 +37,8 @@ big-desktop
 .container {
   display: flex;
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
-  height: 65rem;
-  width: 137rem;
+  height: 60rem;
+  width: 138rem;
   border-radius: 4px;
   background-size: cover;
   align-items: center;
@@ -88,8 +88,8 @@ big-desktop
             width: 4rem;
             height: 4rem; } }
       .container__login-box h2 {
-        font-size: 3.5rem;
-        font-family: font-nastaliq; }
+        font-size: 3rem;
+        font-family: font-aviny; }
         @media only screen and (max-width: 90.625em) {
           .container__login-box h2 {
             font-size: 2.5rem; } }
@@ -99,7 +99,7 @@ big-desktop
       .container__login-box h1 {
         font-size: 4rem;
         font-family: font-header;
-        color: #3e5151; }
+        color: #bdc3c7; }
         @media only screen and (max-width: 90.625em) {
           .container__login-box h1 {
             font-size: 3rem; } }
@@ -202,6 +202,10 @@ big-desktop
   src: url(../fonts/Suls-mir-emad/Suls.ttf);
   font-family: font-nastaliq-2; }
 
+@font-face {
+  src: url(../fonts/Aviny/Aviny.ttf);
+  font-family: font-aviny; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -221,19 +225,19 @@ body {
 
 /* uniti css */
 .background-color-1 {
-  background: linear-gradient(to left, #3e5151, #decba4); }
+  background: linear-gradient(to left, #bdc3c7, #2c3e50); }
 
 .background-img-1 {
-  background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 52%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/6.jpg); }
+  background-image: linear-gradient(280deg, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/img.jpg); }
   @media only screen and (max-width: 68.75em) {
     .background-img-1 {
-      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/6.jpg); } }
+      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/img.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .background-img-1 {
-      background-image: linear-gradient(280deg, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/6.jpg); } }
+      background-image: linear-gradient(280deg, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/img.jpg); } }
   @media only screen and (max-width: 40.625em) {
     .background-img-1 {
-      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/6.jpg); } }
+      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/img.jpg); } }
 
 .margin-right-4 {
   margin-right: 4rem; }
@@ -242,4 +246,4 @@ body {
   margin-top: 2rem; }
 
 .background-color-secandary {
-  background-color: #decba4; }
+  background-color: #de211a; }

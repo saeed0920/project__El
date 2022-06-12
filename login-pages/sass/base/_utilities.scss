@@ -4,12 +4,12 @@
 }
 .background-img-1 {
   background-image: linear-gradient(
-      285deg,
-      rgba(255, 255, 255, 0.9) 52%,
+      280deg,
+      rgba(255, 255, 255, 0.9) 50%,
       rgba(255, 255, 255, 0.9) 50%,
       transparent 50%
     ),
-    url(../img/6.jpg);
+    url(../img/img.jpg);
 
   @include res(1100) {
     background-image: linear-gradient(
@@ -18,7 +18,7 @@
         rgba(255, 255, 255, 0.9) 50%,
         transparent 50%
       ),
-      url(../img/6.jpg);
+      url(../img/img.jpg);
   }
 
   @include res(900) {
@@ -28,7 +28,7 @@
         rgba(255, 255, 255, 0.9) 50%,
         transparent 50%
       ),
-      url(../img/6.jpg);
+      url(../img/img.jpg);
   }
 
   @include res(650) {
@@ -38,7 +38,7 @@
         rgba(255, 255, 255, 0.9) 50%,
         transparent 50%
       ),
-      url(../img/6.jpg);
+      url(../img/img.jpg);
   }
 }
 .margin-right-4 {
@@ -48,5 +48,5 @@
   margin-top: 2rem;
 }
 .background-color-secandary {
-  background-color: $color--secandary;
+  background-color: $color-red;
 }
