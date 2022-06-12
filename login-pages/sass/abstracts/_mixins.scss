@@ -1,0 +1,109 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes moveContainer {
+  0% {
+    transform: translatex(5rem);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+// media query manager
+/*
+
+0px - 600px       = phone only
+
+600px  - 900px    = tablet portrait
+
+900px  - 1200px   = tablet landscape
+
+[1200px  - 1800px]  = Desktop normaly style apply 
+
+1800px -  ∞ px    = Big Desktop 
+/////////////////////////////////////////////////////// 
+
+phone 
+
+tab-small
+
+tab-big 
+
+big-desktop
+*/
+@mixin res($res) {
+  @if $res == phone {
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+  @if $res == tab-small {
+    @media only screen and (max-width: 56.25em) {
+      //900PX
+      @content;
+    }
+  }
+  @if $res == tab-big {
+    @media only screen and (max-width: 75em) {
+      //1200px
+      @content;
+    }
+  }
+  @if $res == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      //1800px
+      @content;
+    }
+  }
+}
+
+// custom res
+@mixin res($res) {
+  @if $res == 410 {
+    @media only screen and (max-width: 25.625em) {
+      @content;
+    }
+  }
+  @if $res == 560 {
+    @media only screen and (max-width: 35em) {
+      @content;
+    }
+  }
+  @if $res == 650 {
+    @media only screen and (max-width: 40.625em) {
+      @content;
+    }
+  }
+  @if $res == 900 {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $res == 1100 {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    }
+  }
+  @if $res == 1450 {
+    @media only screen and (max-width: 90.625em) {
+      @content;
+    }
+  }
+}
