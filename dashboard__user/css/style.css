@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*
+
+0px - 600px       = phone only
+
+600px  - 900px    = tablet portrait
+
+900px  - 1200px   = tablet landscape
+
+[1200px  - 1800px]  = Desktop normaly style apply 
+
+1800px -  ∞ px    = Big Desktop 
+/////////////////////////////////////////////////////// 
+
+phone 
+
+tab-small
+
+tab-big 
+
+big-desktop
+*/
+/* animation */
+.dashboard__user {
+  display: grid;
+  grid-template-rows: 15rem max-content;
+  grid-template-columns: 10rem max-content; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+  padding: 0; }
+
+@font-face {
+  src: url(../fonts/B_Yekan/Yekan.ttf);
+  font-family: font-main; }
+
+@font-face {
+  src: url(../fonts/Far_Nazanin/Far_Nazanin.ttf);
+  font-family: font-header; }
+
+@font-face {
+  src: url(../fonts/Far_Diplomat/Far_Diplomat.ttf);
+  font-family: font-text; }
+
+@font-face {
+  src: url(../fonts/IranNastaliq/IranNastaliq.ttf);
+  font-family: font-nastaliq; }
+
+@font-face {
+  src: url(../fonts/Suls-mir-emad/Suls.ttf);
+  font-family: font-nastaliq-2; }
+
+@font-face {
+  src: url(../fonts/Aviny/Aviny.ttf);
+  font-family: font-aviny; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  direction: rtl; }
+
+.navbar {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .navbar__box-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: font-main;
+    padding: 1rem; }
+    .navbar__box-text__h1 {
+      padding-left: 2rem;
+      border-left: 1px solid #575b5e; }
+    .navbar__box-text__h2 {
+      padding-right: 2rem;
+      color: #de211a; }
+  .navbar__box-icon__icon {
+    width: 5rem; }
+    .navbar__box-icon__icon:first-child {
+      fill: gray; }
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1; }
+  .sidebar span {
+    width: 1rem;
+    height: 0.2rem;
+    background-color: #575b5e;
+    position: relative; }
+    .sidebar span::after, .sidebar span::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      background-color: #575b5e; }
+    .sidebar span::after {
+      top: -1rem; }
+    .sidebar span::before {
+      top: 1rem; }
+  .sidebar-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .sidebar-box__icon {
+      width: 4rem;
+      fill: #de211a; }
+    .sidebar-box__link {
+      text-decoration: none;
+      font-family: font-header;
+      color: #575b5e;
+      font-size: 2rem; }
