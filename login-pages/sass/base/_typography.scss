@@ -91,6 +91,7 @@
         font-size: 3rem;
         font-family: $font--main;
         color: $color--gray-text;
+        margin-bottom: 4rem;
         @include res(1450) {
           font-size: 2rem;
         }
@@ -177,4 +178,9 @@
       }
     }
   }
+}
+
+.container-btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

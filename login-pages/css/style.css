@@ -109,7 +109,8 @@ big-desktop
       .container__login-box h3 {
         font-size: 3rem;
         font-family: font-main;
-        color: #63666f; }
+        color: #63666f;
+        margin-bottom: 4rem; }
         @media only screen and (max-width: 90.625em) {
           .container__login-box h3 {
             font-size: 2rem; } }
@@ -174,6 +175,10 @@ big-desktop
       .container__login--btn-box:active {
         box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
         transform: translateY(-1px); }
+
+.container-btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
 
 *,
 *::after,
@@ -247,3 +252,6 @@ body {
 
 .background-color-secandary {
   background-color: #de211a; }
+
+.background-color-green {
+  background-color: #00a884; }
