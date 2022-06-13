@@ -29,8 +29,12 @@ const turn = selectElement(".turn");
 const branch = selectElement(".branch");
 const done = selectElement(".done");
 
-const btnHome = selectElement(".btn-home");
+const btnHome = selectElementAll(".btn-home");
 const btnNextPage1 = selectElement(".btn-next-page-1");
+const btnNextPage2 = selectElement(".btn-next-page-2");
+const btnBack1 = selectElement(".btn-back-page-1");
+const btnBack2 = selectElement(".btn-back-page-2");
+const btnDone = selectElement(".btn-done");
 // fucntion
 const removeClass = function (nameElement, nameClass) {
   nameElement.classList.remove(nameClass);
@@ -42,7 +46,7 @@ const toggleClass = function (nameElement, nameClass) {
   nameElement.classList.toggle(nameClass);
 };
 
-//setup file
+//setup fil
 const setup = function (x) {
   const sum = x;
   for (const x of sum) {
@@ -50,7 +54,15 @@ const setup = function (x) {
   }
 };
 stat.textContent = items.selector1.textContent;
-setup([1, 3]); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! change
+setup([2, 3]);
+
+for (const x of btnHome) {
+  x.addEventListener("click", function () {
+    stat.textContent = items.selector1.textContent;
+    setup([2, 3]);
+    removeClass(items.main1, "hide");
+  });
+}
 
 const arr = new Set([1, 2, 3]);
 for (let i = 1; i <= 3; i++) {
@@ -60,6 +72,8 @@ for (let i = 1; i <= 3; i++) {
     removeClass(items[`main${i}`], "hide");
     removeClass(span.sp1, "width-100");
     removeClass(span.cr2, "background-green");
+    removeClass(span.sp2, "width-100");
+    removeClass(span.cr3, "background-green");
     for (const x of arr) {
       addClass(items[`main${x}`], "hide");
     }
@@ -71,8 +85,8 @@ for (let i = 1; i <= 3; i++) {
     arr.add(i);
   });
 }
-addClass(turn, "hide"); //!!!!!!!!!
-addClass(done, "hide"); //!!!!!!!!!
+addClass(turn, "hide"); //!!!!!!!!!   del
+addClass(branch, "hide"); //!!!!!!!!! del
 
 addClass(span.cr1, "background-green");
 
@@ -82,4 +96,29 @@ btnNextPage1.addEventListener("click", function () {
   addClass(span.cr2, "background-green");
   addClass(turn, "hide");
   removeClass(branch, "hide");
+});
+
+btnNextPage2.addEventListener("click", function () {
+  addClass(span.sp2, "width-100");
+  addClass(span.cr3, "background-green");
+  addClass(branch, "hide");
+  removeClass(done, "hide");
+});
+
+btnBack1.addEventListener("click", function () {
+  removeClass(span.sp1, "width-100");
+  removeClass(span.cr2, "background-green");
+  removeClass(turn, "hide");
+  addClass(branch, "hide");
+});
+btnBack2.addEventListener("click", function () {
+  removeClass(span.sp2, "width-100");
+  removeClass(span.cr3, "background-green");
+  removeClass(branch, "hide");
+  addClass(done, "hide");
+});
+
+btnDone.addEventListener("click", function () {
+  setup([1, 2]);
+  removeClass(items.main3, "hide");
 });

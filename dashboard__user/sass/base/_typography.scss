@@ -36,3 +36,54 @@
     color: $color-red;
   }
 }
+
+// main -1
+.main-1 {
+  & .container {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    & .text-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      font-family: $font--header;
+      & p {
+        font-size: 2rem;
+        font-family: $font--text;
+        padding: 0 2rem;
+      }
+    }
+  }
+}
+
+// main -3
+.main-3 {
+  display: flex;
+  flex-direction: column;
+
+  & .container {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    & .text-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      font-family: $font--header;
+      & p {
+        font-size: 2rem;
+        font-family: $font--text;
+        padding: 0 2rem;
+      }
+    }
+  }
+}
