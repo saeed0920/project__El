@@ -27,29 +27,229 @@
     </nav>
 
     <div class="sidebar">
-      <span></span>
-      <img src="" alt="logo" class="sidebar__logo" />
+      <!-- <span></span> -->
+      <img src="./img/4.jpg" alt="logo" class="sidebar__logo" />
+      <div class="sidebar-container">
+        <div class="sidebar-box">
+          <svg class="sidebar-box__icon">
+            <use xlink:href="./img/sprite.svg#icon-bell"></use>
+          </svg>
+          <a href="#" class="sidebar-box__link selector-1">پروفایل</a>
+        </div>
 
-      <div class="sidebar-box">
-        <svg class="sidebar-box__icon">
-          <use xlink:href="./img/sprite.svg#icon-bell"></use>
-        </svg>
-        <a href="#" class="sidebar-box__link">پروفایل</a>
-      </div>
+        <div class="sidebar-box">
+          <svg class="sidebar-box__icon">
+            <use xlink:href="./img/sprite.svg#icon-input-checked-outline"></use>
+          </svg>
+          <a href="#" class="sidebar-box__link selector-2">نوبت گیری</a>
+        </div>
 
-      <div class="sidebar-box">
-        <svg class="sidebar-box__icon">
-          <use xlink:href="./img/sprite.svg#icon-input-checked-outline"></use>
-        </svg>
-        <a href="#" class="sidebar-box__link">نوبت گیری</a>
-      </div>
-
-      <div class="sidebar-box">
-        <svg class="sidebar-box__icon">
-          <use xlink:href="./img/sprite.svg#icon-document-text"></use>
-        </svg>
-        <a href="#" class="sidebar-box__link">نوبت های من</a>
+        <div class="sidebar-box">
+          <svg class="sidebar-box__icon">
+            <use xlink:href="./img/sprite.svg#icon-document-text"></use>
+          </svg>
+          <a href="#" class="sidebar-box__link selector-3">نوبت های من</a>
+        </div>
       </div>
     </div>
+    <!-- main  1 -->
+    <main class="main-1">
+      <div class="container">
+        <div class="text-box">
+          <h1>نام :</h1>
+          <p></p>
+        </div>
+        <div class="text-box">
+          <h1>نام خانوادگی :</h1>
+          <p></p>
+        </div>
+        <div class="text-box">
+          <h1>شماره کارت :</h1>
+          <p></p>
+        </div>
+        <div class="text-box">
+          <h1>کد ملی :</h1>
+          <p></p>
+        </div>
+      </div>
+    </main>
+    <!-- main 2  -->
+    <main class="main-2">
+      <div class="turn__map">
+        <span class="span-cr-1">1</span>
+        <span class="span-w-1"><span class="sp-1"></span></span>
+        <span class="span-cr-2">2</span>
+        <span class="span-w-2"><span class="sp-2"></span></span>
+        <span class="span-cr-3">3</span>
+      </div>
+      <section class="turn">
+        <h1 class="turn__container-1__header">ورود اطلاعات</h1>
+
+        <form class="turn__container-1__form">
+          <label for="date">تاریخ</label>
+          <input type="date" name="date" id="date" />
+          <label for="shire">استان</label>
+          <select name="shire" id="shire">
+            <option value="تهران">تهران</option>
+            <option value="مشهد">خراسان رضوی</option>
+          </select>
+          <label for="city">شهر</label>
+          <select name="city" id="city">
+            <option value="تهران">تهران</option>
+            <option value="مشهد">مشهد</option>
+          </select>
+
+          <label for="service">نوع سرویس</label>
+          <select name="city" id="service">
+            <option value="حضوری">حضوری</option>
+            <option value="غیر حضوری">غیر حضوری</option>
+          </select>
+        </form>
+        <div class="container__btn">
+          <button class="btn-next-page btn-next-page-1 btn">مرحله بعد</button>
+          <button class="btn-home btn">بازگشت به خانه</button>
+        </div>
+      </section>
+
+      <section class="branch">
+        <h1 class="branch__header">انتخاب شعبه</h1>
+        <table class="branch__table">
+          <tr>
+            <th>نام شعبه</th>
+            <th>آدرس</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+          </tr>
+          <tr>
+            <td>سيدمرتضي ميري لواساني</td>
+            <td>سيدمرتضي ميري لو</td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+          </tr>
+          <tr>
+            <td>محمدعلي فرحزادي</td>
+            <td>شركت سبز انديش كارآمد</td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+          </tr>
+          <tr>
+            <td>محمدعلي فرحزادي</td>
+            <td>شركت سبز انديش كارآمد</td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+          </tr>
+          <tr>
+            <td>محمدعلي فرحزادي</td>
+            <td>شركت سبز انديش كارآمد</td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+          </tr>
+          <tr>
+            <td>محمدعلي فرحزادي</td>
+            <td>شركت سبز انديش كارآمد</td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+            <td><input type="button" value="9.30-8.30" /></td>
+          </tr>
+        </table>
+        <div class="container__btn">
+          <button class="btn-next-page btn">مرحله بعد</button>
+          <button class="btn-back-page btn">مرحله قبل</button>
+          <button class="btn-home btn">بازگشت به خانه</button>
+        </div>
+      </section>
+
+      <section class="done">
+        <div class="container">
+          <div class="text-box">
+            <h1>نام شعبه :</h1>
+            <p></p>
+          </div>
+          <div class="text-box">
+            <h1>آدرس شعبه :</h1>
+            <p></p>
+          </div>
+          <div class="text-box">
+            <h1>تاریخ رزرو :</h1>
+            <p></p>
+          </div>
+          <div class="text-box">
+            <h1>ساعت رزرو :</h1>
+            <p></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- main -3 -->
+    <main class="main-3">
+      <div class="container">
+        <div class="text-box">
+          <h1>نام شعبه :</h1>
+          <p></p>
+        </div>
+        <div class="text-box">
+          <h1>آدرس شعبه :</h1>
+          <p></p>
+        </div>
+        <div class="text-box">
+          <h1>تاریخ رزرو :</h1>
+          <p></p>
+        </div>
+        <div class="text-box">
+          <h1>ساعت رزرو :</h1>
+          <p></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
   </body>
 </html>

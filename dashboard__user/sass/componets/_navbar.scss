@@ -3,8 +3,10 @@
   grid-row: 1 / 2;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+
+  border-bottom: 1px solid $color-gray;
   &__box-text {
     display: flex;
     align-items: center;
