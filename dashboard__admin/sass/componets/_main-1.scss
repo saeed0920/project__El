@@ -11,6 +11,7 @@
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 2rem;
     grid-column-gap: 4rem;
+
     & select {
       font-size: 1.8rem;
       font-family: $font--text;
@@ -20,6 +21,9 @@
       padding: 0.5rem 1rem;
       border-radius: 4px;
       border: 1px solid $color-gray;
+    }
+    & .level {
+      text-align: center;
     }
   }
 }

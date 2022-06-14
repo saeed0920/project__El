@@ -9,10 +9,15 @@ const selectElementAll = function (nameElement) {
 };
 
 //
-const btn = {
+const items = {
   btn1: selectElement(".btn-1"),
   btn2: selectElement(".btn-2"),
   btn3: selectElement(".btn-3"),
+  textHeader: selectElement(".texth"),
+  level: selectElement(".level"),
+  text1: "استان",
+  text2: "شهر",
+  text3: "شعبه",
 };
 
 const form = selectElement(".main-1");
@@ -40,8 +45,11 @@ const setup = function () {
 setup();
 
 for (let i = 1; i < 4; i++) {
-  btn["btn" + i].addEventListener("click", function () {
+  items["btn" + i].addEventListener("click", function () {
     addClass(form, `box-${i}`);
+    text.textContent = items["btn" + i].textContent;
+    items.textHeader.textContent = items["text" + i];
+    items.level.textContent = i;
     arr.delete(i);
     setup();
     arr.add(i);
