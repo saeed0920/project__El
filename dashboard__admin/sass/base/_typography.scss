@@ -1,0 +1,29 @@
+.page-admin {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  display: grid;
+  grid-template-rows: 10rem max-content 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+  &:focus,
+  &:active {
+    outline: none;
+    border: none;
+  }
+  &:hover {
+    box-shadow: 0 0.7rem 1rem rgba($color-black, 0.3);
+  }
+}
+.main {
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: $color-white-high;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>admin dashboard</title>
+  </head>
+  <body class="page-admin">
+    <nav class="navbar">
+      <div class="navbar__logo-box">
+        <img src="./img/4.jpg" alt="logo" />
+        <h2>
+          بانک ملت <br />
+          پنل ادمین
+        </h2>
+        <p class="text-header">داشبورد</p>
+      </div>
+      <div class="navbar__icon-box">
+        <svg class="navbar__icon-box__icon">
+          <use xlink:href="./img/sprite.svg#icon-export"></use>
+        </svg>
+        <svg class="navbar__icon-box__icon">
+          <use xlink:href="./img/sprite.svg#icon-user-outline"></use>
+        </svg>
+      </div>
+    </nav>
+    <section class="section__btn">
+      <button class="btn section__btn__btn btn-1">سرپرست استان ها</button>
+      <button class="btn section__btn__btn btn-2">سرپرست شهر ها</button>
+      <button class="btn section__btn__btn btn-3">شعبه ها</button>
+    </section>
+    <main class="main">
+      <!-- main1 -->
+      <section class="main-1">
+        <form class="main-1__form">
+          <label for="shire">استان :</label>
+          <select name="" id="shire">
+            <option value="تهران">تهران</option>
+            <option value="خراسان رضوری">خراسان رضوری</option>
+          </select>
+          <label for="level">سطح دسترسی :</label>
+          <select name="" id="level">
+            <option value="1">1</option>
+          </select>
+          <label for="address">آدرس :</label>
+          <input type="text" name="" id="address" />
+          <label for="code">کد شعبه</label>
+          <input type="number" name="" id="code" />
+          <label for="pass">پسورد :</label>
+          <input type="number" name="" id="pass" />
+          <label for="repeatpass">تکرار رمز :</label>
+          <input type="number" name="" id="repeatpass" />
+        </form>
+      </section>
+      <!-- main2 -->
+      <section class="main-2"></section>
+      <!-- main3 -->
+      <section class="main-3"></section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

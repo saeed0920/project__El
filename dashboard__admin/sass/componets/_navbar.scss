@@ -1,0 +1,41 @@
+.navbar {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 2px solid $color-gray;
+  &__logo-box {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    & img {
+      width: 8rem;
+      height: 8rem;
+    }
+    & h2 {
+      padding: 0 2rem;
+      font-size: 3rem;
+      font-family: $font--header;
+      border-left: 1px solid $color-gray;
+    }
+    & p {
+      padding: 0 2rem;
+      font-size: 2rem;
+      font-family: $font--main;
+      color: $color-red;
+    }
+  }
+
+  &__icon-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    &__icon {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}

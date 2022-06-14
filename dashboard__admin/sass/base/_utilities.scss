@@ -1,0 +1,17 @@
+.box-1 {
+  display: grid !important;
+  grid-column: 1 / 2 !important;
+  justify-self: flex-end !important ;
+  margin-left: 5rem !important;
+}
+.box-2 {
+  display: grid !important;
+  grid-column: 2 / 3 !important;
+  justify-self: center !important;
+}
+.box-3 {
+  display: grid !important;
+  grid-column: 3 / 4 !important;
+  justify-self: flex-start !important;
+  margin-right: 2rem !important;
+}
