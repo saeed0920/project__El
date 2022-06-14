@@ -25,5 +25,24 @@
     & .level {
       text-align: center;
     }
+
+    &__btn {
+      justify-self: center;
+      grid-column: 1 / -1;
+      background-color: $color-green;
+      font-size: 2rem;
+      font-family: $font--main;
+      padding: 1rem 4rem;
+      transition: all 0.2s;
+      border: none !important;
+      color: $color-white;
+      &:hover {
+        transform: translateY(-3px);
+      }
+      &:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+      }
+    }
   }
 }

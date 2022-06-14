@@ -19,9 +19,9 @@ const items = {
   text2: "شهر",
   text3: "شعبه",
 };
-
 const form = selectElement(".main-1");
 const text = selectElement(".text-header");
+const btnDone = selectElement(".main-1__form__btn");
 //
 const removeClass = function (nameElement, nameClass) {
   nameElement.classList.remove(nameClass);
@@ -55,3 +55,8 @@ for (let i = 1; i < 4; i++) {
     arr.add(i);
   });
 }
+
+btnDone.addEventListener("click", function () {
+  setup();
+  text.textContent = "داشبورد";
+});

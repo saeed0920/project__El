@@ -177,3 +177,18 @@ body {
       border: 1px solid #575b5e; }
     .main-1__form .level {
       text-align: center; }
+    .main-1__form__btn {
+      justify-self: center;
+      grid-column: 1 / -1;
+      background-color: #2ecc71;
+      font-size: 2rem;
+      font-family: font-main;
+      padding: 1rem 4rem;
+      transition: all 0.2s;
+      border: none !important;
+      color: #fff; }
+      .main-1__form__btn:hover {
+        transform: translateY(-3px); }
+      .main-1__form__btn:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
