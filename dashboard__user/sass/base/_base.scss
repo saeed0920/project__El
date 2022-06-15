@@ -34,11 +34,16 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  @include res(tab-small) {
+    font-size: 55%;
+  }
 }
 
 body {
   font-family: sans-serif;
   direction: rtl;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 ::selection {

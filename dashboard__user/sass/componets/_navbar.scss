@@ -5,8 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  border-bottom: 1px solid $color-gray;
+  box-shadow: 0 0.8rem 1rem rgba($color-black, 0.15);
+  border-bottom: 1px solid $color-text-white;
+  z-index: 2;
   &__box-text {
     display: flex;
     align-items: center;
@@ -26,8 +27,14 @@
   &__box-icon {
     &__icon {
       width: 5rem;
+      height: 5rem;
+      transition: all 0.2s;
+      cursor: pointer;
       &:first-child {
         fill: gray;
+      }
+      &:hover {
+        fill: $color-red;
       }
     }
   }
