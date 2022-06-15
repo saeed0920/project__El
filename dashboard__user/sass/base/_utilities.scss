@@ -8,3 +8,12 @@
   background-color: $color-green !important;
   color: $color-white !important;
 }
+.active-selector {
+  box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.2);
+  background-color: $color-green;
+  transform: scale(1.1);
+  & > * {
+    fill: $color-white;
+    color: $color-white;
+  }
+}

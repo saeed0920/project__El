@@ -68,14 +68,17 @@ const arr = new Set([1, 2, 3]);
 for (let i = 1; i <= 3; i++) {
   items[`selector${i}`].addEventListener("click", function () {
     arr.delete(i);
+
     stat.textContent = items[`selector${i}`].textContent;
     removeClass(items[`main${i}`], "hide");
     removeClass(span.sp1, "width-100");
     removeClass(span.cr2, "background-green");
     removeClass(span.sp2, "width-100");
     removeClass(span.cr3, "background-green");
+    addClass(items[`selector${i}`], "active-selector");
     for (const x of arr) {
       addClass(items[`main${x}`], "hide");
+      removeClass(items[`selector${x}`], "active-selector");
     }
     if (i === 2) {
       removeClass(turn, "hide");
