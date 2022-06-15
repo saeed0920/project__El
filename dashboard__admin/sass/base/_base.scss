@@ -34,11 +34,18 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  @include res(tab-small) {
+    font-size: 58%;
+  }
+  @include res(phone) {
+    font-size: 54%;
+  }
 }
 
 body {
   font-family: sans-serif;
   direction: rtl;
+  overflow-x: hidden;
 }
 
 ::selection {

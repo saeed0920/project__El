@@ -6,19 +6,32 @@
   align-items: center;
   padding: 2rem;
   border-bottom: 2px solid $color-gray;
+  @include res(phone) {
+    padding: 1rem;
+  }
   &__logo-box {
     display: flex;
     align-items: center;
     padding: 2rem;
+    @include res(phone) {
+      padding: 1rem;
+    }
     & img {
       width: 8rem;
       height: 8rem;
+      @include res(phone) {
+        width: 5rem;
+        height: 5rem;
+      }
     }
     & h2 {
       padding: 0 2rem;
       font-size: 3rem;
       font-family: $font--header;
       border-left: 1px solid $color-gray;
+      @include res(phone) {
+        font-size: 2rem;
+      }
     }
     & p {
       padding: 0 2rem;
@@ -36,6 +49,14 @@
     &__icon {
       width: 6rem;
       height: 6rem;
+      transition: all 0.2s;
+      cursor: pointer;
+      &:first-child {
+        fill: $color-gray;
+      }
+      &:hover {
+        fill: $color-red;
+      }
     }
   }
 }

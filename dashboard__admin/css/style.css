@@ -45,6 +45,11 @@ big-desktop
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #ffffff; }
+  @media only screen and (max-width: 56.25em) {
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
 
 *,
 *::after,
@@ -80,27 +85,45 @@ big-desktop
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 58%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 54%; } }
 
 body {
   font-family: sans-serif;
-  direction: rtl; }
+  direction: rtl;
+  overflow-x: hidden; }
 
 .box-1 {
   display: grid !important;
   grid-column: 1 / 2 !important;
   justify-self: flex-end !important;
   margin-left: 5rem !important; }
+  @media only screen and (max-width: 75em) {
+    .box-1 {
+      margin: 0 !important;
+      justify-self: center; } }
 
 .box-2 {
   display: grid !important;
   grid-column: 2 / 3 !important;
   justify-self: center !important; }
+  @media only screen and (max-width: 75em) {
+    .box-2 {
+      margin: 0 !important; } }
 
 .box-3 {
   display: grid !important;
   grid-column: 3 / 4 !important;
   justify-self: flex-start !important;
   margin-right: 2rem !important; }
+  @media only screen and (max-width: 75em) {
+    .box-3 {
+      margin: 0 !important;
+      justify-self: center !important; } }
 
 .navbar {
   grid-row: 1 / 2;
@@ -110,18 +133,31 @@ body {
   align-items: center;
   padding: 2rem;
   border-bottom: 2px solid #575b5e; }
+  @media only screen and (max-width: 37.5em) {
+    .navbar {
+      padding: 1rem; } }
   .navbar__logo-box {
     display: flex;
     align-items: center;
     padding: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__logo-box {
+        padding: 1rem; } }
     .navbar__logo-box img {
       width: 8rem;
       height: 8rem; }
+      @media only screen and (max-width: 37.5em) {
+        .navbar__logo-box img {
+          width: 5rem;
+          height: 5rem; } }
     .navbar__logo-box h2 {
       padding: 0 2rem;
       font-size: 3rem;
       font-family: font-header;
       border-left: 1px solid #575b5e; }
+      @media only screen and (max-width: 37.5em) {
+        .navbar__logo-box h2 {
+          font-size: 2rem; } }
     .navbar__logo-box p {
       padding: 0 2rem;
       font-size: 2rem;
@@ -134,7 +170,13 @@ body {
     padding: 2rem; }
     .navbar__icon-box__icon {
       width: 6rem;
-      height: 6rem; }
+      height: 6rem;
+      transition: all 0.2s;
+      cursor: pointer; }
+      .navbar__icon-box__icon:first-child {
+        fill: #575b5e; }
+      .navbar__icon-box__icon:hover {
+        fill: #de211a; }
 
 .section__btn {
   grid-row: 2 / 3;
@@ -142,6 +184,9 @@ body {
   padding: 4rem 2rem;
   display: flex;
   justify-content: space-evenly; }
+  @media only screen and (max-width: 56.25em) {
+    .section__btn {
+      padding: 1rem 2rem 4rem; } }
   .section__btn__btn {
     font-size: 3rem;
     font-family: font-main;
@@ -151,8 +196,22 @@ body {
     background-color: #de211a;
     color: #fff;
     transition: all 0.2s; }
+    @media only screen and (max-width: 56.25em) {
+      .section__btn__btn {
+        border-radius: 4px;
+        width: 25rem;
+        height: 10rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .section__btn__btn {
+        font-size: 2rem;
+        width: 18rem;
+        height: 10rem; } }
     .section__btn__btn:hover {
-      transform: translatey(-3px); }
+      transform: translatey(-3px);
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15); }
+    .section__btn__btn:active {
+      transform: translatey(-1px);
+      box-shadow: 0, 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
 .main-1 {
   display: none;
@@ -162,6 +221,9 @@ body {
   font-size: 2.5rem;
   font-family: font-header;
   padding: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .main-1 {
+      padding: 0 0; } }
   .main-1__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -176,7 +238,9 @@ body {
       border-radius: 4px;
       border: 1px solid #575b5e; }
     .main-1__form .level {
-      text-align: center; }
+      text-align: center;
+      color: #ff7801;
+      font-size: 2.5rem; }
     .main-1__form__btn {
       justify-self: center;
       grid-column: 1 / -1;

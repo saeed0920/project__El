@@ -26,4 +26,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: $color-white-high;
+  @include res(tab-small) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

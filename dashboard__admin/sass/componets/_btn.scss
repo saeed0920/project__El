@@ -4,18 +4,38 @@
   padding: 4rem 2rem;
   display: flex;
   justify-content: space-evenly;
+
+  @include res(tab-small) {
+    padding: 1rem 2rem 4rem;
+  }
+
   &__btn {
     font-size: 3rem;
     font-family: $font--main;
     width: 25rem;
     height: 25rem;
-    // padding: 5rem;
     border-radius: 50%;
     background-color: $color-red;
     color: $color-white;
     transition: all 0.2s;
+    @include res(tab-small) {
+      border-radius: 4px;
+      width: 25rem;
+      height: 10rem;
+    }
+
+    @include res(phone) {
+      font-size: 2rem;
+      width: 18rem;
+      height: 10rem;
+    }
     &:hover {
       transform: translatey(-3px);
+      box-shadow: 0 1rem 1rem rgba($color-black, 0.15);
+    }
+    &:active {
+      transform: translatey(-1px);
+      box-shadow: 0, 0.5rem 1rem rgba($color-black, 0.15);
     }
   }
 }
